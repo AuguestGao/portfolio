@@ -19,16 +19,33 @@ export const GlobalStyle = createGlobalStyle`
     --accent: cyan
   }
 
+
+
   html {
+    line-height: 1.15;
     -webkit-text-size-adjust: 100%;
   }
 
   body {
     background: var(--bg);
     color: var(--text-primary);
-    margin: 0;
-    passing: 0;
-    width:100%;
-    height: 100%
   }
+
+  main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+*, *:before, *:after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 `;
