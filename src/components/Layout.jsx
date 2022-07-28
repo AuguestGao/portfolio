@@ -1,20 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { GlobalStyle } from "../styles/GlobalStyle";
+import { SideBar } from "./SideBar";
 
-const LayoutWrapper = styled.main`
+const LayoutWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin: 200px auto;
+  margin: 100px auto;
+  justify-content: center;
   width: 90%;
 
-  @media only screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    margin: 75px auto;
+  @media var(--tabletMin) {
+    margin: 20px auto;
     width: 60%;
     max-width: 1080px;
+    font-size: 1.2rem;
   }
 `;
 
@@ -23,6 +22,7 @@ export const Layout = ({ children }) => {
     <LayoutWrapper>
       <GlobalStyle />
       {children}
+      <SideBar />
     </LayoutWrapper>
   );
 };
