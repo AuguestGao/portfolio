@@ -14,7 +14,7 @@ const ProjectsList = styled.div`
   }
 
   *:not(:first-child) {
-    flex: 1;
+    flex: 1 1 45%;
   }
 `;
 
