@@ -75,6 +75,44 @@ export const ProjectPageWrapper = styled.article`
   .center {
     margin: auto;
   }
+
+  figure {
+    margin: auto;
+  }
+
+  figure > figcaption {
+    margin-top: 0.3rem;
+    font-size: 80%;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+
+  .project-page-image {
+    max-width: 960px;
+  }
+
+  .frame {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .frame > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .credit {
+    color: var(--text-secondary);
+    font-size: 60%;
+    margin: auto;
+  }
 `;
 
 const ExternalLinkWrapper = styled.a`

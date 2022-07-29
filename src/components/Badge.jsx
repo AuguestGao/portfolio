@@ -51,13 +51,16 @@ export const Badge = ({ type, techs, repo, live }) => {
           ))}
         </ul>
       </ColumnWrapper>
-      <ColumnWrapper>
-        <h5>Repository</h5>
-        <ExternalLink href={repo} text="Github" />
-      </ColumnWrapper>
+      {repo ? (
+        <ColumnWrapper>
+          <h5>Repository</h5>
+          <ExternalLink href={repo} text="Github" />
+        </ColumnWrapper>
+      ) : null}
+
       <ColumnWrapper>
         <h5>Live site</h5>
-        <ExternalLink href={live} text="Try it now" />
+        <ExternalLink href={live} text="Take me there" />
       </ColumnWrapper>
     </BadgeWrapper>
   );

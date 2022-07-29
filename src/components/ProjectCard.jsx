@@ -50,7 +50,7 @@ export const ProjectCard = ({ ...project }) => {
           </Link>
         </div>
       </ZoomingDiv>
-      <h3>{project.name}</h3>
+      <h3>{project.title}</h3>
 
       <p>{project.purpose}</p>
 

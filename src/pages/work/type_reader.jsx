@@ -7,11 +7,11 @@ import {
   Section,
   Badge,
 } from "../../components";
-import logoFlash from "../../images/Type-Reader/logo flash.gif";
-import addABook from "../../images/Type-Reader/add a book.gif";
-import deleteABook from "../../images/Type-Reader/delete a book.gif";
-import typing from "../../images/Type-Reader/typing.gif";
-import resume from "../../images/Type-Reader/resume.gif";
+import logoFlash from "../../images/showcases/type-reader logo flash.gif";
+import addABook from "../../images/showcases/type-reader add a book.gif";
+import deleteABook from "../../images/showcases/type-reader delete a book.gif";
+import typing from "../../images/showcases/type-reader typing.gif";
+import resume from "../../images/showcases/type-reader resume.gif";
 
 const TyperReaderPage = () => {
   return (
@@ -21,13 +21,13 @@ const TyperReaderPage = () => {
           <StaticImage
             alt="logo"
             loading="eager"
-            src="../images/icon.png"
+            src="../../images/icon.png"
             width={50}
             height={50}
           />
         </Link>
         <h1>Type-Reader</h1>
-        <Section className="limited-width">
+        <Section>
           <p>
             Keyboard typing became a skill that is often overlooked because it
             is so involved in our life everywhere and everyday; however, twenty
@@ -173,7 +173,7 @@ const TyperReaderPage = () => {
           </p>
         </Section>
         <Section className="right-aligned">
-          <h3>Lastly, I wat to say</h3>
+          <h3>Lastly, I want to say</h3>
           <p>
             One thing I didn&apos;t do well was I had most functions and
             services planned when I had into the "fun" part, not all. The

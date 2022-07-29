@@ -1,6 +1,7 @@
 export const projectList = [
   {
-    name: "Type-Reader",
+    title: "Type-Reader",
+    imageName: "type-reader home",
     purpose:
       "An online typing practise app to help users improve typing speed and accuracy with user-defined content.",
     url: "/work/type_reader",
@@ -8,18 +9,20 @@ export const projectList = [
     buttonName: "view project",
   },
   {
-    name: "University Bible Fellowship at Ryerson",
+    title: "Young Disciple Christian Fellowship",
+    imageName: "ydcf home",
     purpose:
       "The official home of an international evangelical church (Ryerson Chapter) that aims at reaching college students.",
-    url: "/work/ryerson_ubf",
-    alt: "Home page of Ryerson UBF website",
+    url: "/work/YDCF",
+    alt: "Home page of Young Disciple Christian Fellowship website",
     buttonName: "view project",
   },
   {
-    name: "Work at GVA",
+    title: "Work at GVA",
+    imageName: "gva hero image",
     purpose:
-      "Read about my past experience as a product designer and engineer at GVA Lighting Inc., a lighting company.",
-    url: "/work/gva",
+      "Read about my past experience as a product designer and engineer at GVA, a lighting company.",
+    url: "/work/GVA",
     alt: "An art was built with GVA lighting products",
     buttonName: "read story",
   },
