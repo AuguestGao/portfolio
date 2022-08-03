@@ -3,6 +3,11 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 18px;
+    --left-in: left-in;
+    --right-in: right-in;
+    --drop-down: drop-down;
+    --push-up: push-up;
+    --load-time:300ms;
   }
 
   .light {
@@ -15,12 +20,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .dark {
-    --bg: #4b5e6b;
+    --bg: #1e313e;
     --bg-secondary: #546a76;
     --text-primary: #fefefe;
     --text-secondary: #efefef;
     --text-highlight: wheat;
-    --accent: #afd6d4;
+    --accent: #466e6c;
   }
 
   html {
@@ -35,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     background: var(--bg);
     color: var(--text-primary);
     transition: color 0.3s ease;
+
   }
 
   main {
@@ -60,5 +66,48 @@ li {
 list-style: none;
 }
 
+h1 {
+  font-size: clamp(2rem, 1rem + 10vw, 5rem);
+  animation: var(--left-in) calc(2 * var(--load-time)) ease;
+}
 
+@keyframes drop-down {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes push-up {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes left-in {
+    0% {
+      transform: translateX(-1000%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes right-in {
+    0% {
+      transform: translateX(1000%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
 `;

@@ -11,6 +11,7 @@ const HeaderWrapper = styled.div`
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  animation: var(--drop-down) calc(2 * var(--load-time)) ease-in;
 `;
 
 const NavWrapper = styled.ul`

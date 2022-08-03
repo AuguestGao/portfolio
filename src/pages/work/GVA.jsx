@@ -20,7 +20,7 @@ const GVAPage = () => {
       <ProjectPageWrapper>
         <Header isHome={false} />
         <h1>Working at GVA</h1>
-        <Section>
+        <Section className="left-in-animate d1">
           <p>
             GVA Lighting, Inc. is a LED lighting design and manufacturing
             company that provides architectural and commercial lighting
@@ -28,7 +28,7 @@ const GVAPage = () => {
             accomplished hundreds of astonishing projects worldwide.
           </p>
         </Section>
-        <Section className="right-aligned">
+        <Section className="right-aligned right-in-animate d2">
           <h3>Designer + Engineer</h3>
           <p>
             As a designer, I provided solutions to custom projects to fulfill
@@ -43,7 +43,7 @@ const GVAPage = () => {
             mechanical engineer in the team.
           </p>
         </Section>
-        <Section>
+        <Section className="push-up-animate">
           <h3>US Pavilion - Two Awards Winning Project</h3>
           <StaticImage
             src="../../images/showcases/gva us pavilion.jpg"

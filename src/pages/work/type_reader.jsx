@@ -24,7 +24,7 @@ const TyperReaderPage = () => {
       <ProjectPageWrapper>
         <Header isHome={false} />
         <h1>Type-Reader</h1>
-        <Section>
+        <Section className="left-in-animate d1">
           <p>
             Keyboard typing became a skill that is often overlooked because it
             is so involved in our life everywhere and everyday; however, twenty
@@ -51,7 +51,7 @@ const TyperReaderPage = () => {
           repo="https://github.com/AuguestGao/type-reader"
           live="https://www.type-reader.xyz/"
         />
-        <div className="responsive">
+        <div className="push-up-animate">
           <img
             src={logoFlash}
             alt="Type-Reader neon logo flashs like in the old days"

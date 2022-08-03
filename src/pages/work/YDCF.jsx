@@ -29,7 +29,7 @@ const YDCFPage = () => {
       <ProjectPageWrapper>
         <Header isHome={false} />
         <h1>Young Disciple Christian Fellowship</h1>
-        <Section>
+        <Section className="left-in-animate d1">
           <p>
             University Bible fellowship (UBF) is an international evangelical
             church and network of house churches dedicated to Christ. Young
@@ -48,7 +48,7 @@ const YDCFPage = () => {
           alt="Home page og YDCF website"
           placeholder="blurred"
           quality={90}
-          className="project-page-image"
+          className="project-page-image push-up-animate"
         />
         <Section>
           <h3>Project Purpose</h3>

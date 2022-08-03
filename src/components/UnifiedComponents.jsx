@@ -59,6 +59,30 @@ export const Section = styled.section`
     margin-bottom: 0.3rem;
   }
 
+  &.left-in-animate {
+    animation-name: var(--left-in);
+    animation-duration: calc(2 * var(--load-time));
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000%);
+  }
+
+  &.d1 {
+    animation-delay: calc(var(--load-time));
+  }
+
+  &.right-in-animate {
+    animation-name: var(--right-in);
+    animation-duration: calc(2 * var(--load-time));
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translateX(1000%);
+  }
+
+  &.d2 {
+    animation-delay: calc(2 * var(--load-time));
+  }
+
   @media (min-width: 768px) {
     p {
       line-height: 1.8;
@@ -131,6 +155,13 @@ export const ProjectPageWrapper = styled.article`
     color: var(--text-secondary);
     font-size: 60%;
     margin: auto;
+  }
+
+  .push-up-animate {
+    animation: var(--push-up) calc(2 * var(--load-time)) ease
+      calc(4 * var(--load-time));
+    animation-fill-mode: forwards;
+    transform: translateY(100%);
   }
 `;
 

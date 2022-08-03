@@ -6,6 +6,10 @@ const BadgeWrapper = styled.div`
   max-width: 640px;
   display: flex;
   gap: 2rem;
+  animation: var(--left-in) calc(2 * var(--load-time)) ease-in
+    calc(2 * var(--load-time));
+  animation-fill-mode: forwards;
+  transform: translateX(-1000%);
 `;
 
 const ColumnWrapper = styled.div`

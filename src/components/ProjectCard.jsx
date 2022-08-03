@@ -54,7 +54,7 @@ export const ProjectCard = ({ ...project }) => {
 
       <p>{project.purpose}</p>
 
-      <PeelingLink to={project.url}>{project.buttonName} &gt;</PeelingLink>
+      <PeelingLink to={project.url}>{project.buttonName}</PeelingLink>
     </ProjectCardWrapper>
   );
 };
