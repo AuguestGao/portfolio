@@ -60,7 +60,7 @@ export const Badge = ({ type, techs, repo, live }) => {
 
       <ColumnWrapper>
         <h5>Live site</h5>
-        <ExternalLink href={live} text="Take me there" />
+        <ExternalLink href={live} text="Visit" />
       </ColumnWrapper>
     </BadgeWrapper>
   );

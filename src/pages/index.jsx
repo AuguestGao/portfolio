@@ -8,6 +8,8 @@ import {
   Summary,
   Projects,
   OutsideWork,
+  Section,
+  Seo,
 } from "../components";
 import { graphql } from "gatsby";
 import { textArt } from "../assets/textArt";
@@ -34,12 +36,20 @@ const IndexPage = ({ data }) => {
 
   return (
     <CenterDiv>
-      <Header />
+      <Seo title="Home" description="Official Portfolio of Auguest Gao" />
+      <Header isHome={true} />
       <HeroGreeting />
       <HeroImage />
       <Summary />
       <Skills />
-      <Projects projects={projects} />
+      <Section id="projects">
+        <h2>What I&apos;ve worked on</h2>
+        <p>
+          I like to stay busy by working on projects. Here are some projects and
+          companies I&apos;ve had fun with.
+        </p>
+        <Projects projects={projects} />
+      </Section>
       <OutsideWork />
     </CenterDiv>
   );

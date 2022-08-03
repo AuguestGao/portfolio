@@ -2,50 +2,53 @@ import React from "react";
 import styled from "styled-components";
 
 const SideBarWrapper = styled.div`
-  position: fixed;
-  width: 30px;
-  right: 10px;
-  bottom: 0;
-  z-index: 10;
+  display: none;
 
-  .email {
-    display: flex;
-    flx-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-  }
+  @media (min-width: 768px) {
+    position: fixed;
+    width: 30px;
+    bottom: 0;
+    z-index: 10;
+    right: 10px;
 
-  a {
-    writing-mode: vertical-rl;
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: all 0.2s ease-in-out;
-    font-family: "SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono",
-      monospace;
-    margin: 0.5rem;
-  }
+    .email {
+      display: flex;
+      flx-wrap: nowrap;
+      flex-direction: column;
+      align-items: baseline;
+      font-size: 0.9rem;
+    }
 
-  a:hover,
-  a:active {
-    transform: translateY(-5px);
-    color: var(--text-highlight);
-  }
+    a {
+      text-align: center;
+      writing-mode: vertical-lr;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: transform 0.2s ease-in-out;
+      font-family: "SF Mono", Consolas, "DejaVu Sans Mono", "Roboto Mono",
+        monospace;
+      margin: 0.5rem auto;
+    }
 
-  .email::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0px auto;
-    background-color: var(--text-primary);
+    a:hover {
+      transform: translateY(-5px);
+      color: var(--text-highlight);
+    }
+
+    .email::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 60px;
+      margin: 0px auto;
+      background-color: var(--text-primary);
+    }
   }
 `;
 
 export const SideBar = () => {
   return (
-    <SideBarWrapper>
+    <SideBarWrapper className="left">
       <div className="email">
         <a href="mailto:auguest.gao@gmail.com">auguest.gao@gmail.com</a>
       </div>

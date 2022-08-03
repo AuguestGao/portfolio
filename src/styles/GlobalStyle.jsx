@@ -3,7 +3,6 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 18px;
-    --tabletMin: 'only screen and (min-width: 480px)' 
   }
 
   .light {
@@ -11,28 +10,31 @@ export const GlobalStyle = createGlobalStyle`
     --bg-secondary: #f9f0dd;
     --text-primary: black;
     --text-secondary: #696969;
-    --text-highlight: coral;
-    --accent: purple;
+    --text-highlight: #f9631c;
+    --accent: #ebd7cc;
   }
 
   .dark {
-    --bg: darkblue;
-    --bg-secondary: #CFCFCF;
-    --text-primary: white;
-    --text-secondary: lightgray;
+    --bg: #4b5e6b;
+    --bg-secondary: #546a76;
+    --text-primary: #fefefe;
+    --text-secondary: #efefef;
     --text-highlight: wheat;
-    --accent: cyan;
+    --accent: #afd6d4;
   }
 
   html {
+    width: 100%;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-font-family: Roboto, Calibri;
+    font-family: Roboto, Calibri;
   }
 
   body {
+    width: 100%;
     background: var(--bg);
     color: var(--text-primary);
+    transition: color 0.3s ease;
   }
 
   main {
@@ -56,6 +58,7 @@ img {
 
 li {
 list-style: none;
-
 }
+
+
 `;

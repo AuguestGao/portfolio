@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import {
   CenterDiv,
   ProjectPageWrapper,
   Section,
   Badge,
+  PeelingLink,
+  Header,
+  Seo,
 } from "../../components";
 import logoFlash from "../../images/showcases/type-reader logo flash.gif";
 import addABook from "../../images/showcases/type-reader add a book.gif";
@@ -16,16 +17,12 @@ import resume from "../../images/showcases/type-reader resume.gif";
 const TyperReaderPage = () => {
   return (
     <CenterDiv>
+      <Seo
+        title="Developing Type-reader"
+        description="My journey on making type-reader, a type pratoce app."
+      />
       <ProjectPageWrapper>
-        <Link to="/" className="logo">
-          <StaticImage
-            alt="logo"
-            loading="eager"
-            src="../../images/icon.png"
-            width={50}
-            height={50}
-          />
-        </Link>
+        <Header isHome={false} />
         <h1>Type-Reader</h1>
         <Section>
           <p>
@@ -54,12 +51,12 @@ const TyperReaderPage = () => {
           repo="https://github.com/AuguestGao/type-reader"
           live="https://www.type-reader.xyz/"
         />
-        <img
-          src={logoFlash}
-          alt="Type-Reader neon logo flashs like in the old days"
-          width={960}
-          className="center"
-        />
+        <div className="responsive">
+          <img
+            src={logoFlash}
+            alt="Type-Reader neon logo flashs like in the old days"
+          />
+        </div>
         <Section>
           <h3>Project Purpose</h3>
           <p>
@@ -116,49 +113,44 @@ const TyperReaderPage = () => {
         <Section>
           <h3>Show time</h3>
           <p>After you registerd and signed in, you can </p>
-          <figure>
-            <img
-              src={addABook}
-              alt="Add a book to your bookshelf in Type Reader"
-              placeholder="blurred"
-              layout="constrained"
-              width={960}
-            />
-            <figcaption>add a book to your bookshelf in Type Reader</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={deleteABook}
-              alt="Delete a book you completed (or not)"
-              placeholder="blurred"
-              layout="constrained"
-              width={960}
-            />
-            <figcaption>delete a book you completed or not</figcaption>
-          </figure>
-          <figure>
-            <img
-              src={typing}
-              alt="start typing, make and correct mistakes, add bookmark for next time, see statistics of today's prastice"
-              placeholder="blurred"
-              layout="constrained"
-              width={960}
-            />
-            <figcaption>
-              start typing, make and correct mistakes, add bookmark for next
-              time, see your typing get a little better
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src={resume}
-              alt="resume where you left"
-              placeholder="blurred"
-              layout="constrained"
-              width={960}
-            />
-            <figcaption>and resume where you left</figcaption>
-          </figure>
+          <div className="responsive">
+            <figure>
+              <img
+                src={addABook}
+                alt="Add a book to your bookshelf in Type Reader"
+              />
+              <figcaption>
+                add a book to your bookshelf in Type Reader
+              </figcaption>
+            </figure>
+          </div>
+          <div className="responsive">
+            <figure>
+              <img
+                src={deleteABook}
+                alt="Delete a book you completed (or not)"
+              />
+              <figcaption>delete a book you completed or not</figcaption>
+            </figure>
+          </div>
+          <div className="responsive">
+            <figure>
+              <img
+                src={typing}
+                alt="start typing, make and correct mistakes, add bookmark for next time, see statistics of today's prastice"
+              />
+              <figcaption>
+                start typing, make and correct mistakes, add bookmark for next
+                time, see your typing get a little better
+              </figcaption>
+            </figure>
+          </div>
+          <div className="responsive">
+            <figure>
+              <img src={resume} alt="resume where you left" />
+              <figcaption>and resume where you left</figcaption>
+            </figure>
+          </div>
         </Section>
         <Section>
           <h3>Greatest chanllenge</h3>
@@ -186,6 +178,12 @@ const TyperReaderPage = () => {
             laying out all the functionalities, workflows and database
             structures while keeping them scalable.
           </p>
+        </Section>
+        <Section>
+          <h2>Next work</h2>
+          <PeelingLink to="/work/YDCF">
+            Young Disciple Christian Fellowship
+          </PeelingLink>
         </Section>
       </ProjectPageWrapper>
     </CenterDiv>

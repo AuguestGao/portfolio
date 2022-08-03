@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import {
   CenterDiv,
   ProjectPageWrapper,
   Section,
   Badge,
+  PeelingLink,
+  Header,
+  Seo,
 } from "../../components";
 
 const uxFeatures = [
@@ -20,16 +22,12 @@ const uxFeatures = [
 const YDCFPage = () => {
   return (
     <CenterDiv>
+      <Seo
+        title="Building YDCF"
+        description="How I made the website for Young Disciple Christian Fellowship and reflections."
+      />
       <ProjectPageWrapper>
-        <Link to="/" className="logo">
-          <StaticImage
-            alt="logo"
-            loading="eager"
-            src="../../images/icon.png"
-            width={50}
-            height={50}
-          />
-        </Link>
+        <Header isHome={false} />
         <h1>Young Disciple Christian Fellowship</h1>
         <Section>
           <p>
@@ -144,7 +142,7 @@ const YDCFPage = () => {
           </ul>
         </Section>
         <Section className="right-aligned">
-          <h3>Chanllenge</h3>
+          <h3>Challenge</h3>
           <p>
             Time was the biggest enemy in the project. I got the request from
             the client in early January and need to ship by the end of February.
@@ -170,6 +168,10 @@ const YDCFPage = () => {
             a few days before the deadline, and I gained much precious
             experience and confident.
           </p>
+        </Section>
+        <Section className="right-aligned">
+          <h2>Next work</h2>
+          <PeelingLink to="/work/GVA">Work at GVA</PeelingLink>
         </Section>
       </ProjectPageWrapper>
     </CenterDiv>

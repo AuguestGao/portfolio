@@ -8,13 +8,11 @@ const FooterWrapper = styled.footer`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3rem 5rem;
+  padding: 2rem;
   gap: 3rem;
 
-  @media var(--tabletMin) {
-    margin: 20px auto;
-    width: 60%;
-    max-width: 1080px;
+  @media (min-width: 480px) {
+    padding: 2rem 4rem;
   }
 `;
 
