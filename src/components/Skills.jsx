@@ -21,11 +21,11 @@ const ListWrapper = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 90%;
   gap: 0.5rem;
 
   & > li.skill {
-    flex: 0 1 19%;
+    flex: 0 1 18%;
     list-style: none;
   }
 

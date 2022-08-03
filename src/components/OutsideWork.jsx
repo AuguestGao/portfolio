@@ -31,11 +31,11 @@ const OutsideWorkWrapper = styled.div`
 export const OutsideWork = () => {
   return (
     <Section>
-      <h2>Outside of work</h2>
+      <h2>When I&apos;m staring at my computer ...</h2>
       <OutsideWorkWrapper>
         <p>
-          I take care many plants, caddle with fur friends, walk in the nature,
-          and fully live my life.
+          I like to read, caddle with fur friends, hike/ride/kayak in the
+          nature, win boardgames and fully live my life.
         </p>
         <div className="photos">
           <StaticImage

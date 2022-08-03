@@ -1,28 +1,31 @@
 import React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { CenterDiv, ProjectPageWrapper, Section } from "../../components";
+import {
+  CenterDiv,
+  ProjectPageWrapper,
+  Section,
+  ExternalLink,
+  PeelingLink,
+  Header,
+  Seo,
+} from "../../components";
 
 const GVAPage = () => {
   return (
     <CenterDiv>
+      <Seo
+        title="Engineer at GVA"
+        description="I was a designer and an engineer at GVA."
+      />
       <ProjectPageWrapper>
-        <Link to="/" className="logo">
-          <StaticImage
-            alt="logo"
-            loading="eager"
-            src="../../images/icon.png"
-            width={50}
-            height={50}
-          />
-        </Link>
+        <Header isHome={false} />
         <h1>Working at GVA</h1>
         <Section>
           <p>
-            GVA Lighting, Inc. is a LED lighting design and manafacturing
-            company who provides architectural and commercial lighting
+            GVA Lighting, Inc. is a LED lighting design and manufacturing
+            company that provides architectural and commercial lighting
             solutions. Over the years, GVA has gained many global customers and
-            accomplished hundreds of astonishing projects world-wide.
+            accomplished hundreds of astonishing projects worldwide.
           </p>
         </Section>
         <Section className="right-aligned">
@@ -32,16 +35,16 @@ const GVAPage = () => {
             customer's wildest imaginations.
           </p>
           <p>
-            As an engineer, I developed new prodcuts and improved existing
-            products. A new workflow that I developed{" "}
+            As an engineer, I was responsible for developing new prodcuts and
+            improving existing products. A new workflow that I developed{" "}
             <strong>doubled production speed</strong> while{" "}
-            <strong>cut product failure rate down to less than 8%</strong>.
-            Later, i helped to launch a new business line as the lead mechanical
-            engineer in the team.
+            <strong>cutting product failure rate down to less than 8%</strong>.
+            I also contributed to launch a new business line as the lead
+            mechanical engineer in the team.
           </p>
         </Section>
         <Section>
-          <h3>US Pavilion - Awards Winning Project</h3>
+          <h3>US Pavilion - Two Awards Winning Project</h3>
           <StaticImage
             src="../../images/showcases/gva us pavilion.jpg"
             alt="US Pavilion Light show"
@@ -50,19 +53,19 @@ const GVAPage = () => {
             className="project-page-image"
           />
           <p>
-            Riverfront Park, located in downtown Spokane WA, is home to 1974
+            Riverfront Park, located in downtown Spokane WA, is home to the 1974
             World Expo. The tented structure mesh was left after the original
-            cover was removed in 1979.As the key visual attraction of the city's
-            renovation, an highly customed lighting fixtures were mounted to
+            cover was removed in 1979. As the key visual attraction of the
+            city's renovation, highly customed lighting fixtures were mounted to
             reengage the pavilion with the general public.
           </p>
           <p>
-            This project was chanllenging for the scale of customization. I
+            This project was challenging for the scale of customization. I
             collabrated with our QA department to formulate a testing plan for
-            ensuring 10 years product life based on the analysis result of local
-            climate data. A number of prototypes were produced, compared and
-            tested to gurantee to meet the specifications before the selected
-            was sent to a tailored stress test.
+            ensuring 10 years of product life based on the analysis result of
+            local climate data. Many prototypes were produced, compared and
+            tested to guarantee to meet the specifications before the selected
+            were sent to a tailored stress test.
           </p>
           <p>
             On production side, I prepared drawings and worked with production
@@ -100,12 +103,11 @@ const GVAPage = () => {
             IES 2020 Illumination Awards.
           </p>
 
-          <a
+          <ExternalLink
             className="center"
             href="https://gvalighting.com/portfolio-items/us-pavilion-riverfront-park-spokane/"
-          >
-            Read more about this project.
-          </a>
+            text="Read more about this project."
+          />
           <p>
             In analyzing the climate data, nearly 40,000 measurements were used
             which was in equavalent of 10 years accumulated daily weather data.
@@ -145,6 +147,10 @@ const GVAPage = () => {
             taught me the highest engineer standard by doing it and is a role
             model to me in many professional aspects.
           </p>
+        </Section>
+        <Section className="right-aligned">
+          <h2>Next work</h2>
+          <PeelingLink to="/work/type_reader">Type Reader</PeelingLink>
         </Section>
       </ProjectPageWrapper>
     </CenterDiv>

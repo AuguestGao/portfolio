@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Auguest's Portfolio`,
-    titleTemplate: "%s | AG",
+    titleTemplate: "AG | %s",
     description: "Portfolio of Auguest Gao",
-    siteUrl: `https://auguestgao.com`,
+    url: `https://auguestgao.com`,
     author: "Auguest Gao",
   },
   plugins: [
@@ -16,7 +16,6 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

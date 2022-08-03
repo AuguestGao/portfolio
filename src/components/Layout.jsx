@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { GlobalStyle } from "../styles/GlobalStyle";
-import { SideBar } from "./SideBar";
+import { SideBar } from "./";
 
 const LayoutWrapper = styled.div`
-  display: flex;
-  margin: 100px auto;
-  justify-content: center;
   width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  justify-content: start;
+  font-size: 90%;
 
-  @media var(--tabletMin) {
-    margin: 20px auto;
-    width: 60%;
+  @media (min-width: 480px) {
+    margin: 50px auto;
     max-width: 1080px;
-    font-size: 1.2rem;
   }
 `;
 

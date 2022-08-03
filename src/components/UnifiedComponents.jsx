@@ -13,7 +13,7 @@ export const PeelingLink = styled(Link)`
 
   &:hover,
   &:active {
-    box-shadow: inset 300px 0 0 0 var(--accent);
+    box-shadow: inset 500px 0 0 0 var(--accent);
     color: white;
   }
 `;
@@ -35,7 +35,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
   color: var(--text-secondary);
 
   h2,
@@ -47,7 +47,7 @@ export const Section = styled.section`
   p {
     font-size: 80%;
     line-height: 1.5;
-    width: 60%;
+    width: 100%;
   }
 
   &.right-aligned {
@@ -57,6 +57,15 @@ export const Section = styled.section`
   li {
     font-size: 80%;
     margin-bottom: 0.3rem;
+  }
+
+  @media (min-width: 768px) {
+    p {
+      line-height: 1.8;
+      width: 75%;
+    }
+
+    gap: 2rem;
   }
 `;
 
@@ -76,8 +85,18 @@ export const ProjectPageWrapper = styled.article`
     margin: auto;
   }
 
+  .responsive {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+  }
+
+  img {
+    width: 100%;
+  }
+
   figure {
-    margin: auto;
+    max-width: 960px;
   }
 
   figure > figcaption {
@@ -126,7 +145,7 @@ const ExternalLinkWrapper = styled.a`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
   }
 `;
 

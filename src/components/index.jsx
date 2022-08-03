@@ -14,3 +14,4 @@ export * from "./OutsideWork";
 export * from "./EndOfFooter";
 export * from "./SideBar";
 export * from "./Badge";
+export * from "./SEO";
