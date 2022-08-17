@@ -31,10 +31,12 @@ const HeroGreetingWrapper = styled.section`
 
 export const HeroGreeting = () => (
   <HeroGreetingWrapper id="#about">
-    <h1>Hi there, I&apos;m Auguest.</h1>
+    <h1>Hi there 👋,</h1> <h1>I&apos;m Auguest.</h1>
     <h1>
       A Full-stack <span>Developer</span>,{" "}
     </h1>
-    <p>previously lead engineer with awards-winning project.</p>
+    <p>
+      previously <span>Mechanical Engineer</span> with awards-winning project.
+    </p>
   </HeroGreetingWrapper>
 );

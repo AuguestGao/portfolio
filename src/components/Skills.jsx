@@ -39,8 +39,8 @@ export const Skills = () => (
   <Section>
     <h2>Top skills</h2>
     <p>
-      I have turned a number of ideas to useable applications mostly with the
-      help of these tools.
+      I have turned many ideas into useable applications mostly with the help of
+      these tools:
     </p>
     <ListWrapper className="main">
       {skillList.map((item, index) => (

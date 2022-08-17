@@ -5,33 +5,58 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const OutsideWorkWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
   p {
+    width: 100%;
     color: var(--text-secondary);
-    margin 1rem auto;
+    margin: 1rem auto;
   }
 
-  & > div.photos {
-    flex: 0 1 60%;
+  .photos {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 100%;
     gap: 0.5rem;
   }
 
-  .updown {
+  .photos-sub-div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     gap: 0.5rem;
+    max-width: 300px;
+  }
+
+  @media (min-width: 480px) {
+    flex-direction: row;
+
+    p {
+      width: 30%;
+    }
+
+    .photos {
+      flex-direction: row;
+      flex: 1 1 100%;
+    }
+
+    .photos-sub-div {
+      flex-direction: column;
+    }
+
+    .
   }
 `;
 
 export const OutsideWork = () => {
   return (
     <Section>
-      <h2>When I&apos;m staring at my computer ...</h2>
+      <h2>When I&apos;m not in front of a computer ...</h2>
       <OutsideWorkWrapper>
         <p>
           I like to read, caddle with fur friends, hike/ride/kayak in the
@@ -46,7 +71,7 @@ export const OutsideWork = () => {
             width={300}
             className="left"
           />
-          <div className="updown">
+          <div className="photos-sub-div">
             <StaticImage
               src="../images/fur_1.jpg"
               alt="Auguest's fur friend"
