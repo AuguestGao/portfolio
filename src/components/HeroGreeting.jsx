@@ -6,12 +6,11 @@ const HeroGreetingWrapper = styled.section`
   letter-spacing: 0.03em;
 
   & h1:first-of-type {
-    animation: var(--left-in) calc(2 * var(--load-time)) ease;
+    animation: var(--left-in) calc(1 * var(--load-time)) ease;
   }
 
   & h1:nth-of-type(2) {
-    animation: var(--left-in) calc(2 * var(--load-time)) ease
-      calc(var(--load-time));
+    animation: var(--left-in) calc(1 * var(--load-time)) ease;
     animation-fill-mode: forwards;
     transform: translateX(-1000%);
   }
@@ -22,8 +21,8 @@ const HeroGreetingWrapper = styled.section`
 
   & p {
     font-size: clamp(1.5rem, 1.5rem+10%, 2.5rem);
-    animation: var(--left-in) calc(2 * var(--load-time)) ease
-      calc(2 * var(--load-time));
+    animation: var(--left-in) calc(1 * var(--load-time)) ease
+      calc(1 * var(--load-time));
     animation-fill-mode: forwards;
     transform: translateX(-1000%);
   }
@@ -31,7 +30,7 @@ const HeroGreetingWrapper = styled.section`
 
 export const HeroGreeting = () => (
   <HeroGreetingWrapper id="#about">
-    <h1>Hi there 👋,</h1> <h1>I&apos;m Auguest.</h1>
+    <h1>Hi there,</h1> <h1>I&apos;m Auguest.</h1>
     <h1>
       A Full-stack <span>Developer</span>,{" "}
     </h1>

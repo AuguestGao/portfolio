@@ -24,7 +24,7 @@ const TyperReaderPage = () => {
       <ProjectPageWrapper>
         <Header isHome={false} />
         <h1>Type-Reader</h1>
-        <Section className="left-in-animate d1">
+        <Section className="left-in-animate delay2">
           <p>
             Keyboard typing became a skill that is often overlooked because it
             is already so involved in our day-to-day; however, typing was a
