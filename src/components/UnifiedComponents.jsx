@@ -61,26 +61,26 @@ export const Section = styled.section`
 
   &.left-in-animate {
     animation-name: var(--left-in);
-    animation-duration: calc(2 * var(--load-time));
+    animation-duration: calc(1 * var(--load-time));
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     transform: translateX(-1000%);
   }
 
-  &.d1 {
-    animation-delay: calc(var(--load-time));
+  &.delay1 {
+    animation-delay: calc(1.5 * var(--load-time));
   }
 
   &.right-in-animate {
     animation-name: var(--right-in);
-    animation-duration: calc(2 * var(--load-time));
+    animation-duration: calc(1 * var(--load-time));
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     transform: translateX(1000%);
   }
 
-  &.d2 {
-    animation-delay: calc(2 * var(--load-time));
+  &.delay2 {
+    animation-delay: calc(1.75 * var(--load-time));
   }
 
   @media (min-width: 768px) {
@@ -159,7 +159,7 @@ export const ProjectPageWrapper = styled.article`
 
   .push-up-animate {
     animation: var(--push-up) calc(2 * var(--load-time)) ease
-      calc(4 * var(--load-time));
+      calc(1 * var(--load-time));
     animation-fill-mode: forwards;
     transform: translateY(100%);
   }

@@ -3,7 +3,7 @@ export const projectList = [
     title: "Type-Reader",
     imageName: "type-reader home",
     purpose:
-      "An online typing practise app to help users improve typing speed and accuracy with user-defined content.",
+      "An online typing practice app to help users improve their typing speed and accuracy with any content they are interested in.",
     url: "/work/type_reader",
     alt: "Home page of Type Reader web app",
     buttonName: "view project",
@@ -12,7 +12,7 @@ export const projectList = [
     title: "Young Disciple Christian Fellowship",
     imageName: "ydcf home",
     purpose:
-      "The official home of an international evangelical church (Ryerson Chapter) that aims at reaching college students.",
+      "The official home to an international evangelical church (Ryerson Chapter) that aims at reaching college students.",
     url: "/work/YDCF",
     alt: "Home page of Young Disciple Christian Fellowship website",
     buttonName: "view project",

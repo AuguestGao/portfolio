@@ -6,16 +6,19 @@ export const Summary = () => {
     <Section id="about">
       <h2>A little bit of me</h2>
       <p>
-        I&apos;m a Toronto based web developer who is curious about almost
-        everything expecially technologies.
+        I&apos;m a full-stack developer who is curious about almost everything
+        especially technologies.
       </p>
 
-      <p>I can alwasy find and learn new skills.</p>
+      <p>
+        Because of my curiosity, I find myself always surrounded by ideas,
+        challenges, and opportunities, which allowed me to constantly learn
+        diverse skills.
+      </p>
 
       <p>
-        To cope with my curioucity, I have had learned web development and used
-        my newly acquired skills to create meaningful products that are not only
-        helpful but are designed in way that is maintainable and easy to scale.
+        These learnings equipped me with the necessary set of skills to turn
+        ideas into meaningful products that help me and others.
       </p>
     </Section>
   );

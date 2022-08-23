@@ -24,17 +24,17 @@ const TyperReaderPage = () => {
       <ProjectPageWrapper>
         <Header isHome={false} />
         <h1>Type-Reader</h1>
-        <Section className="left-in-animate d1">
+        <Section className="left-in-animate delay2">
           <p>
             Keyboard typing became a skill that is often overlooked because it
-            is so involved in our life everywhere and everyday; however, twenty
-            years ago, typing was a skill that must be specially trained.
+            is already so involved in our day-to-day; however, typing was a
+            skill that must be specially trained just twenty years ago.
           </p>
 
           <p>
-            Type-Reader is a web application that dedicates to help people
-            improving their typing skills while giving them the freedom to use
-            their own content.
+            Type-Reader is a web application that dedicates to helping people
+            improve their typing skills while giving them the freedom to use any
+            content they might be interested in practicing with.
           </p>
         </Section>
         <Badge
@@ -58,29 +58,29 @@ const TyperReaderPage = () => {
           />
         </div>
         <Section>
-          <h3>Project Purpose</h3>
+          <h3>The born</h3>
           <p>
-            The sole purpose of this project is to make typing pratice
-            enjoyable.
+            The sole purpose of this project is to make typing practices fun.
           </p>
           <p>
-            Most (if not all) of the online typing practise app does a great job
-            on guiding users on learning typing, but not so much on practising
-            because a user must follow provided content which is often grade one
-            level dialogues. So, here comes the Type-Reader.
-          </p>
-
-          <p>
-            Since "enjoyable" content is extermely personal and I am a super
-            book lover, the idea of combining typing practice and books stricked
-            me, and this is the born of Type-Reader. You practice your typing
-            with the content you upload, whether is an article, a script, or a
-            book.
+            During my journey to improve my typing, I found most (if not all) of
+            the online typing platforms do a great job of educating typing
+            skills, but do poorly at practicing. Typically, the user must follow
+            provided content in their practice sessions. This can be boring
+            because the dialogues are often in grade one level or maybe
+            sometimes are just a bunch of words glued together and making no
+            sense. As someone who doesn’t like compromises, I decided to make
+            something both fun and useful.
           </p>
 
           <p>
-            You are imporving typing speed and accuracy while reading your
-            favourite book, or vice verse.{" "}
+            Since I am a book lover, the idea of combining typing practice and
+            reading books struck me: why not use the content I want to read as
+            the content I will practise with, whether it’s the hottest news of
+            the day, the next unread email, or a book in the to-read list. By
+            letting the user decide their practice content, the “fun” is
+            guaranteed while you are busy typing. This is the born of
+            Type-Reader.
           </p>
         </Section>
         <Section className="right-aligned">
@@ -93,44 +93,35 @@ const TyperReaderPage = () => {
 
           <p>
             The app follows <strong>microservice</strong> architecture and
-            resulted in one service for frontend and five backend services for
-            five different services including auth, books, bookmark, book
-            parsing, and user statistics. For cope with CI/CD workflows,{" "}
-            <strong>Docker</strong>, <strong>Github Actions</strong> and{" "}
-            <strong>Kubernetes</strong> work hand-in-hand for ensuring future
-            scaling and robustness of the app.
+            resulted in one service for the front-end and five services for
+            back-end including auth, books, bookmark, book parsing, and user
+            statistics. to cope with CI/CD workflows, <strong>Docker</strong>,{" "}
+            <strong>Github Actions</strong> and <strong>Kubernetes</strong> work
+            hand-in-hand for ensuring future scaling and robustness of the app.
           </p>
           <p>There are also many other great tools made this app possible:</p>
           <ul>
             <li>NATS Streaming Server: Publish/Subscribe Messaging System</li>
             <li>Jest: Unit test</li>
             <li>Redis: in memory storage</li>
-            <li>NGINX: ingress load balancing</li>
+            <li>NGINX: ingress load balancer</li>
             <li>MongoDB + Mongoose: data storage with ORM</li>
             <li>Git: version control</li>
           </ul>
         </Section>
         <Section>
           <h3>Show time</h3>
-          <p>After you registerd and signed in, you can </p>
+          <p>After signing up and signing in, I can </p>
           <div className="responsive">
             <figure>
-              <img
-                src={addABook}
-                alt="Add a book to your bookshelf in Type Reader"
-              />
-              <figcaption>
-                add a book to your bookshelf in Type Reader
-              </figcaption>
+              <img src={addABook} alt="Add a book to my bookshelf" />
+              <figcaption>add a book to my bookshelf</figcaption>
             </figure>
           </div>
           <div className="responsive">
             <figure>
-              <img
-                src={deleteABook}
-                alt="Delete a book you completed (or not)"
-              />
-              <figcaption>delete a book you completed or not</figcaption>
+              <img src={deleteABook} alt="Delete a book" />
+              <figcaption>delete a book</figcaption>
             </figure>
           </div>
           <div className="responsive">
@@ -141,46 +132,49 @@ const TyperReaderPage = () => {
               />
               <figcaption>
                 start typing, make and correct mistakes, add bookmark for next
-                time, see your typing get a little better
+                time, and know my typing gets a little better told by the
+                statistics
               </figcaption>
             </figure>
           </div>
           <div className="responsive">
             <figure>
-              <img src={resume} alt="resume where you left" />
-              <figcaption>and resume where you left</figcaption>
+              <img src={resume} alt="resume where I left" />
+              <figcaption>also resume where I left</figcaption>
             </figure>
           </div>
         </Section>
         <Section>
-          <h3>Greatest chanllenge</h3>
+          <h3>Greatest challenge</h3>
           <p>
-            The greatest chanllenge for me is perhaps data. I spent a lot of
-            time to design a unified database structure to allow data flowing
-            between services smoothly while preventing as much data duplication.
-            This is less intuitive when comparing with a monolith application
-            due to the nature of microservices. I have modified database
-            structure several times during the development stage before all
-            services work together.
+            The greatest challenge for me is perhaps data. I spent a lot of time
+            designing a unified database structure to allow data to flow between
+            services smoothly while preventing as much data duplication. Due to
+            the nature of microservices, this is less intuitive when compared
+            with a monolith application. I modified the database structure
+            several times during the development before all services finally
+            worked together.
           </p>
         </Section>
         <Section className="right-aligned">
-          <h3>Lastly, I want to say</h3>
+          <h3>Lastly,</h3>
           <p>
-            One thing I didn&apos;t do well was I had most functions and
-            services planned when I had into the "fun" part, not all. The
-            workflow, database structure, or functionality of a service must be
-            re-done due to the incompleteness of the original plan, and
-            sometimes there is no work around.
+            One thing I could have done better was in the software design phase.
+            I had most functions and services (not all) planned when I headed
+            into the actual coding. However, because of the incompleteness of
+            the software design, some newly implemented services happened to be
+            incompatible with the old service&apos;s data structure, and the
+            change was inevitable for them to co-exist.
           </p>
           <p>
-            A successful application begins at the completion of the design by
+            I was lucky to learn this valuable lesson in a smaller application.
+            A successful application only begins with a thorough design by
             laying out all the functionalities, workflows and database
             structures while keeping them scalable.
           </p>
         </Section>
         <Section>
-          <h2>Next work</h2>
+          <h2>Next up...</h2>
           <PeelingLink to="/work/YDCF">
             Young Disciple Christian Fellowship
           </PeelingLink>
